@@ -984,7 +984,7 @@ ul {
 
 .job-badge {
   display: inline-block;
-  padding: 0.2rem 0.75rem;
+  padding: 0.25rem 0.85rem;
   background: rgba(16, 185, 129, 0.15);
   color: var(--accent-emerald);
   border: 1px solid rgba(16, 185, 129, 0.3);
@@ -993,6 +993,25 @@ ul {
   border-radius: var(--radius-full);
   margin-bottom: 0.4rem;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-purple {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-purple);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.badge-cyan {
+  background: rgba(6, 182, 212, 0.15);
+  color: var(--accent-cyan);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.badge-amber {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-amber);
+  border-color: rgba(245, 158, 11, 0.3);
 }
 
 .job-title {
@@ -1002,12 +1021,12 @@ ul {
 }
 
 .company-name {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--accent-cyan);
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .period-badge {
@@ -1024,38 +1043,65 @@ ul {
 }
 
 .job-summary {
-  font-size: 0.975rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.75;
+  color: var(--text-secondary);
 }
 
-.job-responsibilities {
+.job-highlights-container {
   margin-bottom: 1.5rem;
-  padding: 1.25rem;
-  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.job-highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  border-left: 3px solid var(--accent-cyan);
+  transition: all var(--transition-fast);
 }
 
-.job-responsibilities h5 {
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  margin-bottom: 0.75rem;
+.job-highlight-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-glow);
+  transform: translateX(4px);
+}
+
+.jh-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
-.job-responsibilities ul {
-  padding-left: 1.2rem;
-  list-style: disc;
+.jh-icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
+.jh-icon.emerald { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
+.jh-icon.purple { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
+.jh-icon.amber { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+
+.jh-content strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
 }
 
-.job-responsibilities li {
-  font-size: 0.9rem;
+.jh-content p {
+  font-size: 0.875rem;
+  line-height: 1.55;
   color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+  margin: 0;
 }
 
 .job-tags {
@@ -1068,13 +1114,13 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.3rem 0.8rem;
+  padding: 0.35rem 0.85rem;
   background: rgba(6, 182, 212, 0.08);
   border: 1px solid rgba(6, 182, 212, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.775rem;
   color: var(--accent-cyan);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* =========================================================

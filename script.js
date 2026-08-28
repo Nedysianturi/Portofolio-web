@@ -298,78 +298,78 @@ document.addEventListener('DOMContentLoaded', () => {
     'tadika-web': {
       title: 'Pengembangan & Pemeliharaan Website Yayasan Tadika Puri',
       organization: 'Yayasan Tadika Puri (2021 – Sekarang)',
-      role: 'Staff IT & Web Administrator',
-      overview: 'Mengelola ekosistem digital yayasan agar selalu terkini, cepat, dan mudah diakses oleh calon siswa serta masyarakat.',
+      role: 'Staff IT & Digital Media Specialist',
+      overview: 'Mengelola dan mengembangkan ekosistem digital yayasan agar selalu adaptif, cepat diakses, dan memudahkan interaksi calon peserta program dan publik.',
       points: [
-        'Pembaruan struktur navigasi dan visual antarmuka website.',
-        'Publikasi berkala artikel program pelatihan, pengumuman, dan brosur digital.',
-        'Pemantauan performa web hosting, optimasi kecepatan, dan keamanan dari ancaman siber.',
-        'Integrasi tombol pendaftaran langsung ke WhatsApp admin dan formulir online.'
+        'Meremajakan navigasi dan tata letak visual website untuk kenyamanan pengunjung.',
+        'Mengintegrasikan sistem pendaftaran dan konsultasi program via direct WhatsApp CTA.',
+        'Memantau performa server hosting, kecepatan loading halaman, dan keamanan berkala.',
+        'Mempublikasikan artikel kegiatan, pengumuman formal, dan kurikulum pelatihan secara tepat waktu.'
       ],
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Content Management', 'Web Hosting & Domain DNS']
+      tech: ['HTML5 & CSS3', 'JavaScript ES6', 'Web Content Management', 'Hosting & Domain DNS', 'SEO & Speed Optimization']
     },
     'safira-web': {
       title: 'Pengembangan Website Korporat PT. Safira Jayatelkomindo',
       organization: 'PT. Safira Jayatelkomindo (2013 – 2014)',
-      role: 'Lead Web Developer & IT Staff',
-      overview: 'Bertanggung jawab atas seluruh siklus hidup pembuatan website perusahaan dari tahap konsep, perancangan antarmuka, hingga peluncuran live.',
+      role: 'Web Developer & IT Staff',
+      overview: 'Memimpin seluruh siklus perancangan dan peluncuran website korporat perusahaan dari konsep desain hingga online deployment.',
       points: [
-        'Merancang wireframe, skema warna, dan mockup tata letak website.',
-        'Mengembangkan halaman katalog produk sistem keamanan (CCTV, sensor alarm, fingerprint).',
-        'Melakukan uji fungsionalitas dan kompatibilitas browser.',
-        'Menyelenggarakan sesi pelatihan dan membuat panduan teknis pengelolaan konten untuk staf perusahaan.'
+        'Merancang wireframe, mockup visual, dan arsitektur navigasi halaman perusahaan.',
+        'Membangun etalase produk sistem keamanan terpadu (CCTV, sensor alarm, fingerprint scanner).',
+        'Melakukan uji performa, responsivitas lintas peramban (cross-browser), dan live hosting setup.',
+        'Menyusun panduan teknis serta melatih staf internal dalam pengelolaan konten website.'
       ],
-      tech: ['Full Web Lifecycle', 'UI/UX Design', 'Hardware Catalog Integration', 'Technical Documentation']
+      tech: ['Full Web Lifecycle', 'UI/UX Layout', 'Hardware Catalog Showcase', 'Technical Training & Docs']
     },
     'creative-design': {
       title: 'Desain Materi Promosi & Manajemen Media Sosial',
       organization: 'Yayasan Tadika Puri (2021 – Sekarang)',
-      role: 'Graphic Designer & Social Media Handler',
-      overview: 'Menciptakan identitas visual yang konsisten dan menarik untuk seluruh kampanye promosi program pendidikan yayasan.',
+      role: 'Graphic Designer & Social Media Strategist',
+      overview: 'Menciptakan identitas visual kreatif dan konsisten untuk mendukung seluruh kampanye penerimaan peserta dan kegiatan yayasan.',
       points: [
-        'Mendesain puluhan poster promosi, brosur penerimaan, dan banner kegiatan menggunakan Adobe Photoshop.',
-        'Merancang template konten Instagram feed, story, dan format promosi digital lainnya.',
-        'Menganalisis performa interaksi (engagement, jangkauan, dan tayangan) media sosial.',
-        'Mendukung peningkatan jumlah pendaftar baru melalui visual marketing yang informatif.'
+        'Memproduksi puluhan poster promosi, brosur, banner, dan kartu informasi dengan Adobe Photoshop.',
+        'Menyusun konsep feed Instagram interaktif untuk meningkatkan engagement dan citra brand.',
+        'Mengevaluasi analitik performa konten (jangkauan, interaksi, dan respon audiens).',
+        'Mendongkrak daya tarik program pelatihan sehingga mendatangkan calon pendaftar potensial.'
       ],
-      tech: ['Adobe Photoshop', 'Visual Branding', 'Social Media Analytics', 'Copywriting & Content Strategy']
+      tech: ['Adobe Photoshop', 'Visual Branding', 'Marketing Collateral', 'Social Media Analytics', 'Content Strategy']
     },
     'security-system': {
       title: 'Implementasi Sistem Keamanan CCTV, Alarm & Absensi Biometrik',
       organization: 'PT. Safira Jayatelkomindo (2013 – 2014)',
       role: 'Security & Hardware IT Technician',
-      overview: 'Instalasi dan konfigurasi sistem keamanan terpadu multi-perangkat untuk proteksi aset perusahaan dan pencatatan presensi karyawan.',
+      overview: 'Eksekusi pemasangan dan konfigurasi perangkat keras keamanan fisik multi-titik untuk proteksi aset kantor dan pencatatan presensi pegawai.',
       points: [
-        'Instalasi jalur kabel coaxial / UTP dan penempatan sudut pandang kamera CCTV strategis.',
-        'Konfigurasi DVR/NVR sistem pemantauan jarak jauh melalui jaringan komputer.',
-        'Pemasangan sensor alarm pengaman pintu dan sensor gerak.',
-        'Instalasi mesin absensi sidik jari (fingerprint biometric) serta sinkronisasi software data kehadiran pegawai.'
+        'Instalasi jalur pengkabelan terstruktur dan penempatan kamera CCTV pada sudut strategis.',
+        'Konfigurasi DVR/NVR pemantauan video jarak jauh via jaringan komputer lokal.',
+        'Pemasangan sensor alarm pengaman pintu dan sensor gerak perimeter.',
+        'Integrasi mesin absensi biometrik sidik jari (fingerprint) dan sinkronisasi software absensi pegawai.'
       ],
-      tech: ['CCTV DVR/NVR', 'Biometric Fingerprint Scanner', 'Security Sensor Alarms', 'Network Cabling & Hardware']
+      tech: ['CCTV DVR/NVR', 'Biometric Fingerprint Scanner', 'Security Sensor Alarms', 'Network Cabling & Hardware Setup']
     },
     'night-audit': {
       title: 'Rekonsiliasi Night Audit, City Ledger & Laporan Eksekutif GM',
       organization: 'Megara Hotel (2017 – 2020)',
-      role: 'Staff IT Night Audit',
-      overview: 'Memastikan keakuratan data pendapatan kamar, piutang perusahaan rekanan, dan saldo kas harian hotel sebelum penutupan pembukuan harian.',
+      role: 'Staff IT & Night Audit Specialist',
+      overview: 'Menjalankan audit presisi tinggi atas pendapatan harian kamar, piutang perusahaan rekanan, dan saldo kas hotel sebelum pembukuan hari berikutnya.',
       points: [
-        'Memeriksa seluruh tagihan tamu, voucher diskon, dan kesesuaian deposit kasir.',
-        'Audit status piutang perusahaan (City Ledger) dan verifikasi transaksi pembayaran instansi.',
-        'Menyusun rekapitulasi laporan harian (Daily Revenue Report) dan mencetak dokumen untuk General Manager.',
-        'Menangani dukungan teknis komputer resepsionis dan jaringan hotel serta perbaikan teknis fasilitas kamar.'
+        'Memeriksa dan merekonsiliasi seluruh tagihan transaksi kamar, diskon, dan deposit kasir tanpa selisih.',
+        'Melakukan audit berkala atas status piutang korporat rekanan (City Ledger).',
+        'Menyusun rekapitulasi laporan eksekutif harian (Daily Revenue Report) langsung ke General Manager.',
+        'Memberikan dukungan teknis sistem PMS hotel serta penanganan cepat fasilitas kamar (kunci elektronik, AC, listrik).'
       ],
-      tech: ['Hospitality PMS', 'City Ledger Accounting', 'Financial Reconciliation', 'Executive Reporting', 'LAN Troubleshooting']
+      tech: ['Hospitality PMS', 'City Ledger Accounting', 'Financial Reconciliation', 'Executive Reporting', 'LAN & Hardware Support']
     },
     'school-admin': {
       title: 'Administrasi Keuangan SPP, Kas Kecil & Sinkronisasi Data Guru',
       organization: 'TK Elshadday Kids (2014 – 2017)',
-      role: 'Staff Administrasi',
-      overview: 'Menjaga kelancaran operasional administrasi sekolah melalui pengelolaan pembukuan yang tertib, akurat, dan sesuai regulasi.',
+      role: 'Staff Administrasi & Keuangan Sekolah',
+      overview: 'Menjaga tata kelola administrasi dan keuangan sekolah yang tertib, transparan, akuntabel, serta patuh pada regulasi kedinasan.',
       points: [
-        'Pencatatan dan verifikasi pembayaran SPP seluruh siswa setiap bulan tanpa selisih.',
-        'Pengelolaan petty cash (kas kecil) untuk kebutuhan logistik dan operasional sekolah.',
-        'Pengarsipan dan pengajuan berkas data guru dan tenaga kependidikan ke dinas pemerintah.',
-        'Penyusunan surat-menyurat resmi dan komunikasi dengan orang tua murid.'
+        'Pencatatan dan rekonsiliasi penerimaan SPP siswa setiap bulan dengan akurasi 100%.',
+        'Pengelolaan petty cash (kas kecil) untuk kebutuhan logistik dan operasional harian sekolah.',
+        'Pengarsipan dan pengajuan berkas pendataan guru dan tenaga kependidikan ke dinas pendidikan pemerintah.',
+        'Penyusunan korespondensi surat resmi dan komunikasi santun dengan para orang tua murid.'
       ],
       tech: ['Microsoft Excel (SUM/Spreadsheet)', 'Petty Cash Bookkeeping', 'Government Administrative Filing', 'Official Correspondence']
     }
