@@ -306,6 +306,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Memantau performa server hosting, kecepatan loading halaman, dan keamanan berkala.',
         'Mempublikasikan artikel kegiatan, pengumuman formal, dan kurikulum pelatihan secara tepat waktu.'
       ],
+      results: [
+        'Tingkat waktu aktif (uptime) website terjaga stabil di 99.9%.',
+        'Peningkatan efisiensi respon calon pendaftar via integrasi tombol WhatsApp CTA.',
+        'Akses publik terhadap kurikulum dan jadwal pelatihan menjadi jauh lebih cepat dan terstruktur.'
+      ],
       tech: ['HTML5 & CSS3', 'JavaScript ES6', 'Web Content Management', 'Hosting & Domain DNS', 'SEO & Speed Optimization']
     },
     'safira-web': {
@@ -318,6 +323,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Membangun etalase produk sistem keamanan terpadu (CCTV, sensor alarm, fingerprint scanner).',
         'Melakukan uji performa, responsivitas lintas peramban (cross-browser), dan live hosting setup.',
         'Menyusun panduan teknis serta melatih staf internal dalam pengelolaan konten website.'
+      ],
+      results: [
+        'Keberhasilan peluncuran live website resmi pertama PT. Safira Jayatelkomindo.',
+        'Katalog produk sistem keamanan terintegrasi secara rapi dan profesional.',
+        'Staf internal mandiri mengelola pembaruan sistem berkat modul pelatihan teknis terstruktur.'
       ],
       tech: ['Full Web Lifecycle', 'UI/UX Layout', 'Hardware Catalog Showcase', 'Technical Training & Docs']
     },
@@ -332,6 +342,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Mengevaluasi analitik performa konten (jangkauan, interaksi, dan respon audiens).',
         'Mendongkrak daya tarik program pelatihan sehingga mendatangkan calon pendaftar potensial.'
       ],
+      results: [
+        'Memproduksi 50+ aset desain visual siap pakai untuk promosi media digital dan materi cetak.',
+        'Peningkatan interaksi (engagement rate) akun media sosial resmi yayasan secara konsisten.',
+        'Visual branding yang profesional berhasil mendongkrak minat dan kepercayaan calon peserta.'
+      ],
       tech: ['Adobe Photoshop', 'Visual Branding', 'Marketing Collateral', 'Social Media Analytics', 'Content Strategy']
     },
     'security-system': {
@@ -344,6 +359,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Konfigurasi DVR/NVR pemantauan video jarak jauh via jaringan komputer lokal.',
         'Pemasangan sensor alarm pengaman pintu dan sensor gerak perimeter.',
         'Integrasi mesin absensi biometrik sidik jari (fingerprint) dan sinkronisasi software absensi pegawai.'
+      ],
+      results: [
+        'Pengawasan keamanan area kantor beroperasi 24/7 tanpa area buta (blind spots).',
+        'Pencatatan data presensi sidik jari karyawan 100% akurat tanpa kemungkinan manipulasi.',
+        'Sistem alarm darurat teruji aktif memberikan perlindungan perimeter aset perusahaan.'
       ],
       tech: ['CCTV DVR/NVR', 'Biometric Fingerprint Scanner', 'Security Sensor Alarms', 'Network Cabling & Hardware Setup']
     },
@@ -358,6 +378,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Menyusun rekapitulasi laporan eksekutif harian (Daily Revenue Report) langsung ke General Manager.',
         'Memberikan dukungan teknis sistem PMS hotel serta penanganan cepat fasilitas kamar (kunci elektronik, AC, listrik).'
       ],
+      results: [
+        'Tercapainya rekonsiliasi audit keuangan 100% seimbang (Zero Error Balance).',
+        'Laporan harian eksekutif selalu tersaji tepat waktu di meja General Manager setiap pukul 07.00 pagi.',
+        'Stabilitas sistem PMS hotel tetap terjaga dan penanganan cepat keluhan fasilitas kamar tamu.'
+      ],
       tech: ['Hospitality PMS', 'City Ledger Accounting', 'Financial Reconciliation', 'Executive Reporting', 'LAN & Hardware Support']
     },
     'school-admin': {
@@ -370,6 +395,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Pengelolaan petty cash (kas kecil) untuk kebutuhan logistik dan operasional harian sekolah.',
         'Pengarsipan dan pengajuan berkas pendataan guru dan tenaga kependidikan ke dinas pendidikan pemerintah.',
         'Penyusunan korespondensi surat resmi dan komunikasi santun dengan para orang tua murid.'
+      ],
+      results: [
+        'Tata kelola arus kas kecil dan pembayaran SPP siswa terbebas dari defisit (Zero Deficit).',
+        '100% berkas data guru dan staf disetujui dinas pendidikan pemerintah secara tepat waktu tanpa revisi.',
+        'Sistem kearsipan dokumen sekolah tertata rapi dan hubungan dengan orang tua murid berjalan harmonis.'
       ],
       tech: ['Microsoft Excel (SUM/Spreadsheet)', 'Petty Cash Bookkeeping', 'Government Administrative Filing', 'Official Correspondence']
     }
@@ -384,24 +414,31 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="margin-bottom: 1.5rem;">
             <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase;">${data.organization}</span>
             <h2 style="font-size: 1.6rem; color: var(--text-primary); margin: 0.35rem 0;">${data.title}</h2>
-            <span style="display: inline-block; padding: 0.2rem 0.75rem; background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); border-radius: 9999px; font-size: 0.8rem; font-weight: 600;">Peran: ${data.role}</span>
+            <span style="display: inline-block; padding: 0.25rem 0.85rem; background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); border-radius: 9999px; font-size: 0.8rem; font-weight: 600;">Peran: ${data.role}</span>
           </div>
 
-          <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.03); border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-            <p style="font-size: 0.95rem; line-height: 1.6; margin: 0;">${data.overview}</p>
+          <div style="margin-bottom: 1.5rem; padding: 1.1rem; background: rgba(255,255,255,0.03); border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+            <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--text-secondary);">${data.overview}</p>
           </div>
 
           <div style="margin-bottom: 1.5rem;">
-            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary);"><i class="fa-solid fa-list-check" style="color: var(--accent-cyan);"></i> Ruang Lingkup & Pencapaian:</h4>
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary);"><i class="fa-solid fa-list-check" style="color: var(--accent-cyan);"></i> Ruang Lingkup & Cakupan Kerja:</h4>
             <ul style="padding-left: 1.25rem; list-style: disc; display: flex; flex-direction: column; gap: 0.5rem;">
               ${data.points.map(pt => `<li style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">${pt}</li>`).join('')}
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 1.5rem; padding: 1.1rem; background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px;">
+            <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--accent-emerald); display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-trophy text-warning"></i> Hasil Akhir & Dampak Terukur:</h4>
+            <ul style="padding-left: 1.25rem; list-style: disc; display: flex; flex-direction: column; gap: 0.5rem;">
+              ${data.results.map(res => `<li style="font-size: 0.9rem; color: var(--text-primary); font-weight: 500; line-height: 1.5;">${res}</li>`).join('')}
             </ul>
           </div>
 
           <div>
             <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary);"><i class="fa-solid fa-wrench" style="color: var(--accent-cyan);"></i> Kompetensi & Tools yang Diterapkan:</h4>
             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              ${data.tech.map(t => `<span style="padding: 0.3rem 0.8rem; background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 9999px; font-size: 0.8rem; color: var(--accent-cyan); font-weight: 600;">${t}</span>`).join('')}
+              ${data.tech.map(t => `<span style="padding: 0.35rem 0.85rem; background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 9999px; font-size: 0.8rem; color: var(--accent-cyan); font-weight: 600;">${t}</span>`).join('')}
             </div>
           </div>
         `;
