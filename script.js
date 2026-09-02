@@ -347,6 +347,13 @@ document.addEventListener('DOMContentLoaded', () => {
         'Peningkatan interaksi (engagement rate) akun media sosial resmi yayasan secara konsisten.',
         'Visual branding yang profesional berhasil mendongkrak minat dan kepercayaan calon peserta.'
       ],
+      gallery: [
+        { img: '/design-1.jpg', title: 'Poster Selebrasi Alumni Lion Group', category: 'Alumni Career', desc: 'Desain selebrasi alumni Tadika Puri yang diterima kerja di PT. Triperkasa Dirgantara (Lion Group).' },
+        { img: '/design-2.jpg', title: 'Flyer HUT ke-48 & Pendaftaran TK Tadika Puri', category: 'Promo Pendidikan', desc: 'Flyer pendaftaran murid baru playgroup & TK menyambut HUT ke-48 Tadika Puri & HUT ke-80 RI.' },
+        { img: '/design-3.png', title: 'Story Template Cruise Line & Hotel School', category: 'Social Media Story', desc: 'Banner vertikal story syarat dan benefit pelatihan kapal pesiar & perhotelan.' },
+        { img: '/design-4.jpg', title: 'Poster Pelatihan Perhotelan & Kapal Pesiar', category: 'Poster Pelatihan', desc: 'Poster pendaftaran pelatihan 4 bulan teori & 6 bulan On the Job Training.' },
+        { img: '/design-5.png', title: 'Infografis Rekrutmen Eksekutif KidzEducare', category: 'Infografis Rekrutmen', desc: 'Infografis lowongan kerja posisi Tangan Kanan Direktur berstruktur 3 pilar.' }
+      ],
       tech: ['Adobe Photoshop', 'Visual Branding', 'Marketing Collateral', 'Social Media Analytics', 'Content Strategy']
     },
     'security-system': {
@@ -435,6 +442,19 @@ document.addEventListener('DOMContentLoaded', () => {
             </ul>
           </div>
 
+          ${data.gallery ? `
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary);"><i class="fa-solid fa-images" style="color: var(--accent-cyan);"></i> Galeri Karya Desain Promosi Nyata:</h4>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: 0.75rem;">
+                ${data.gallery.map(g => `
+                  <div class="gallery-thumb-item" style="border-radius: 6px; overflow: hidden; border: 1px solid var(--border-color); aspect-ratio: 4/5; background: #000; cursor: pointer;" onclick="window.openDesignLightbox('${g.img}', '${data.organization}', '${g.title}', '${g.category}', 'Adobe Photoshop', '${g.desc}')">
+                    <img src="${g.img}" alt="${g.title}" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
           <div>
             <h4 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary);"><i class="fa-solid fa-wrench" style="color: var(--accent-cyan);"></i> Kompetensi & Tools yang Diterapkan:</h4>
             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
@@ -457,6 +477,65 @@ document.addEventListener('DOMContentLoaded', () => {
     projectModal.addEventListener('click', (e) => {
       if (e.target === projectModal) {
         projectModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // =========================================================
+  // 7B. DESIGN LIGHTBOX MODAL HANDLERS
+  // =========================================================
+  const designLightboxModal = document.getElementById('designLightboxModal');
+  const closeLightboxBtn = document.getElementById('closeLightboxBtn');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClient = document.getElementById('lightboxClient');
+  const lightboxTitle = document.getElementById('lightboxTitle');
+  const lightboxCategory = document.getElementById('lightboxCategory');
+  const lightboxSoftware = document.getElementById('lightboxSoftware');
+  const lightboxDesc = document.getElementById('lightboxDesc');
+  const lightboxFullLink = document.getElementById('lightboxFullLink');
+
+  window.openDesignLightbox = function(imgSrc, client, title, category, software, desc) {
+    if (!designLightboxModal) return;
+    if (lightboxImg) lightboxImg.src = imgSrc;
+    if (lightboxClient) lightboxClient.textContent = client || 'Karya Desain Grafis';
+    if (lightboxTitle) lightboxTitle.textContent = title || 'Pratinjau Desain';
+    if (lightboxCategory) lightboxCategory.textContent = category || 'Desain Grafis';
+    if (lightboxSoftware) lightboxSoftware.textContent = software || 'Adobe Photoshop';
+    if (lightboxDesc) lightboxDesc.textContent = desc || '';
+    if (lightboxFullLink) lightboxFullLink.href = imgSrc;
+    designLightboxModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  document.querySelectorAll('.open-design-modal').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      const client = card.getAttribute('data-client');
+      const title = card.getAttribute('data-title');
+      const category = card.getAttribute('data-category');
+      const software = card.getAttribute('data-software');
+      const desc = card.getAttribute('data-desc');
+      window.openDesignLightbox(imgSrc, client, title, category, software, desc);
+    });
+  });
+
+  if (closeLightboxBtn && designLightboxModal) {
+    closeLightboxBtn.addEventListener('click', () => {
+      designLightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    designLightboxModal.addEventListener('click', (e) => {
+      if (e.target === designLightboxModal) {
+        designLightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && designLightboxModal.classList.contains('active')) {
+        designLightboxModal.classList.remove('active');
         document.body.style.overflow = '';
       }
     });
