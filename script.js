@@ -352,7 +352,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { img: '/design-2.jpg', title: 'Flyer HUT ke-48 & Pendaftaran TK Tadika Puri', category: 'Promo Pendidikan', desc: 'Flyer pendaftaran murid baru playgroup & TK menyambut HUT ke-48 Tadika Puri & HUT ke-80 RI.' },
         { img: '/design-3.png', title: 'Story Template Cruise Line & Hotel School', category: 'Social Media Story', desc: 'Banner vertikal story syarat dan benefit pelatihan kapal pesiar & perhotelan.' },
         { img: '/design-4.jpg', title: 'Poster Pelatihan Perhotelan & Kapal Pesiar', category: 'Poster Pelatihan', desc: 'Poster pendaftaran pelatihan 4 bulan teori & 6 bulan On the Job Training.' },
-        { img: '/design-5.png', title: 'Infografis Rekrutmen Eksekutif KidzEducare', category: 'Infografis Rekrutmen', desc: 'Infografis lowongan kerja posisi Tangan Kanan Direktur berstruktur 3 pilar.' }
+        { img: '/design-5.png', title: 'Infografis Rekrutmen Eksekutif KidzEducare', category: 'Infografis Rekrutmen', desc: 'Infografis lowongan kerja posisi Tangan Kanan Direktur berstruktur 3 pilar.' },
+        { img: '/design-6.jpg', title: 'Poster Peluang Kerja Spa Therapist Luar Negeri', category: 'Karir Internasional', desc: 'Penempatan kerja Spa Therapist hotel bintang 5 ke Turki, Malaysia, Sri Lanka & Rusia.' },
+        { img: '/design-7.jpg', title: 'Poster Peluang Kerja Hotel Luar Negeri', category: 'Perhotelan Luar Negeri', desc: 'Poster lowongan perhotelan Turki & Malaysia untuk Receptionist, Cook Helper, Housekeeping, dan Waiter.' },
+        { img: '/design-8.jpg', title: 'Poster Kampanye Internasional: Turki Memanggil!', category: 'Kampanye Turki', desc: 'Poster tematik penempatan kerja perhotelan dan spa therapist legal & profesional di Turki.' }
       ],
       tech: ['Adobe Photoshop', 'Visual Branding', 'Marketing Collateral', 'Social Media Analytics', 'Content Strategy']
     },
