@@ -545,6 +545,118 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================
+  // 7C. TIKTOK CASE STUDY TABS SWITCHER (MATCHING USER SCREENSHOT)
+  // =========================================================
+  const ttCaseStudyData = {
+    'video-1': {
+      badge: 'VIDEO 01',
+      title: 'Motivasi Karir & Langkah Berani di Dunia Penerbangan',
+      author: 'Airlines Business Career02',
+      meta: '28 Mei 2025 • 22 detik',
+      img: '/tt-video-2-crop.jpg',
+      hook: '“Saatnya tampil beda dan melangkah lebih berani!”',
+      goal: 'Membangun motivasi dan ketertarikan emosional generasi muda untuk berkarir di industri aviasi.',
+      approach: 'Narasi inspiratif, audio hook yang memikat, dan dorongan bertindak untuk menggapai masa depan.',
+      likes: '890',
+      comments: '35',
+      saves: '58',
+      shares: '42',
+      total: '1.025',
+      link: 'https://www.tiktok.com/@airlinesbusinesscareer02/video/7498299874799013128'
+    },
+    'video-2': {
+      badge: 'VIDEO 02',
+      title: 'Promosi Pendaftaran Staff Bandara',
+      author: 'Airlines Business Career02',
+      meta: '4 Juni 2025 • 15 detik',
+      img: '/tt-video-2-crop.jpg',
+      hook: '“Jangan lewatkan kesempatan ini!”',
+      goal: 'Menarik calon peserta dan menyampaikan persyaratan awal program secara cepat.',
+      approach: 'Hook langsung, visual seragam penerbangan, serta informasi kualifikasi dalam format video vertikal singkat.',
+      likes: '725',
+      comments: '22',
+      saves: '44',
+      shares: '36',
+      total: '827',
+      link: 'https://www.tiktok.com/@airlinesbusinesscareer02/video/7511982085700128018'
+    },
+    'video-3': {
+      badge: 'VIDEO 03',
+      title: 'Edukasi 7 Syarat Mudah Join Pelatihan Staff Airlines',
+      author: 'Airlines Business Career02',
+      meta: '12 Juli 2025 • 35 detik',
+      img: '/tt-video-2-crop.jpg',
+      hook: '“7 Syarat Mudah Join Pelatihan Staff Airlines! ✈️”',
+      goal: 'Mengedukasi audiens mengenai kualifikasi pendaftaran secara transparan dan terstruktur.',
+      approach: 'Struktur infografis video bertahap, narasi santai bersahabat, serta direct CTA konsultasi persyaratan.',
+      likes: '940',
+      comments: '48',
+      saves: '62',
+      shares: '55',
+      total: '1.105',
+      link: 'https://www.tiktok.com/@airlinesbusinesscareer02/video/7559810784952356114'
+    },
+    'video-4': {
+      badge: 'VIDEO 04',
+      title: 'Penerimaan Program Pramugara & Pramugari (Flight Attendant)',
+      author: 'Next Step ID Partner',
+      meta: '18 Agustus 2025 • 28 detik',
+      img: '/tt-video-2-crop.jpg',
+      hook: '“Buka Jalan Menjadi Pramugara & Pramugari Siap Kerja!”',
+      goal: 'Menjaring pendaftar kelas intensif Flight Attendant dengan menonjolkan pelatihan singkat dan sertifikasi ganda.',
+      approach: 'Presentasi talent dengan seragam aviasi, pemaparan keuntungan program, dan integrasi WhatsApp pendaftaran.',
+      likes: '1.120',
+      comments: '64',
+      saves: '85',
+      shares: '78',
+      total: '1.347',
+      link: 'https://www.tiktok.com/@nextstep_id/video/7413978451377425681'
+    }
+  };
+
+  const ttTabBtns = document.querySelectorAll('.tt-tab-btn');
+  const csBadge = document.getElementById('csBadge');
+  const csTitle = document.getElementById('csTitle');
+  const csHook = document.getElementById('csHook');
+  const csGoal = document.getElementById('csGoal');
+  const csApproach = document.getElementById('csApproach');
+  const csStatLikes = document.getElementById('csStatLikes');
+  const csStatComments = document.getElementById('csStatComments');
+  const csStatSaves = document.getElementById('csStatSaves');
+  const csStatShares = document.getElementById('csStatShares');
+  const csStatTotal = document.getElementById('csStatTotal');
+  const csPhoneAuthor = document.getElementById('csPhoneAuthor');
+  const csPhoneMeta = document.getElementById('csPhoneMeta');
+  const csPhoneImg = document.getElementById('csPhoneImg');
+  const csTiktokLink = document.getElementById('csTiktokLink');
+
+  ttTabBtns.forEach(tabBtn => {
+    tabBtn.addEventListener('click', () => {
+      ttTabBtns.forEach(b => b.classList.remove('active'));
+      tabBtn.classList.add('active');
+
+      const vidKey = tabBtn.getAttribute('data-video');
+      const data = ttCaseStudyData[vidKey];
+      if (data) {
+        if (csBadge) csBadge.textContent = data.badge;
+        if (csTitle) csTitle.textContent = data.title;
+        if (csHook) csHook.textContent = data.hook;
+        if (csGoal) csGoal.textContent = data.goal;
+        if (csApproach) csApproach.textContent = data.approach;
+        if (csStatLikes) csStatLikes.textContent = data.likes;
+        if (csStatComments) csStatComments.textContent = data.comments;
+        if (csStatSaves) csStatSaves.textContent = data.saves;
+        if (csStatShares) csStatShares.textContent = data.shares;
+        if (csStatTotal) csStatTotal.textContent = data.total;
+        if (csPhoneAuthor) csPhoneAuthor.textContent = data.author;
+        if (csPhoneMeta) csPhoneMeta.textContent = data.meta;
+        if (csPhoneImg) csPhoneImg.src = data.img;
+        if (csTiktokLink) csTiktokLink.href = data.link;
+      }
+    });
+  });
+
+  // =========================================================
   // 8. CV / RESUME MODAL & PRINT FUNCTIONALITY
   // =========================================================
   const resumeModal = document.getElementById('resumeModal');

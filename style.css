@@ -2025,6 +2025,235 @@ ul {
 }
 
 /* =========================================================
+   TIKTOK CASE STUDY BREAKDOWN (MATCHING USER SCREENSHOT)
+   ========================================================= */
+.tt-casestudy-section {
+  margin-top: 3.5rem;
+}
+
+.tt-casestudy-header {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tt-tab-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tt-tab-btn {
+  padding: 0.55rem 1.2rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.825rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.tt-tab-btn:hover {
+  border-color: #f59e0b;
+  color: var(--text-primary);
+}
+
+.tt-tab-btn.active {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border-color: #f59e0b;
+  color: #0f172a;
+  font-weight: 800;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+}
+
+.tt-casestudy-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.tt-phone-col {
+  flex-shrink: 0;
+  width: 290px;
+}
+
+.tt-phone-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #090d16;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+}
+
+.tt-phone-sound-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  z-index: 5;
+}
+
+.tt-phone-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.tt-phone-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(9, 13, 22, 0.96) 0%, rgba(9, 13, 22, 0.75) 60%, transparent 100%);
+  padding: 1.25rem 1rem 1rem;
+  z-index: 4;
+}
+
+.tt-phone-author {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+}
+
+.tt-phone-meta {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.tt-content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tt-cs-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: #f59e0b;
+  color: #0f172a;
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.tt-cs-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.75rem;
+  line-height: 1.25;
+}
+
+.tt-cs-field {
+  margin-bottom: 1.35rem;
+}
+
+.tt-cs-label {
+  display: block;
+  font-size: 0.775rem;
+  font-weight: 800;
+  color: #0d9488;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+[data-theme="dark"] .tt-cs-label {
+  color: #2dd4bf;
+}
+
+.tt-cs-quote {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tt-cs-text {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tt-cs-metrics-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 1.25rem 1.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+[data-theme="light"] .tt-cs-metrics-box {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.tt-metric-col strong {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.tt-metric-col span {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.tt-cs-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
    EDUCATION & ORGANIZATION SECTION
    ========================================================= */
 .edu-org-grid {
@@ -2838,6 +3067,21 @@ ul {
 
   .tiktok-grid {
     grid-template-columns: 1fr;
+  }
+
+  .tt-casestudy-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.75rem;
+  }
+
+  .tt-phone-col {
+    width: 260px;
+  }
+
+  .tt-cs-metrics-box {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 0.5rem;
   }
 
   .tiktok-stats-strip {
