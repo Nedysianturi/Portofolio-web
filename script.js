@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Motivasi Karir & Langkah Berani di Dunia Penerbangan',
       author: 'Airlines Business Career02',
       meta: '28 Mei 2025 • 22 detik',
-      img: '/tt-video-2-crop.jpg',
+      img: '/tt-thumb-1.jpg',
       hook: '“Saatnya tampil beda dan melangkah lebih berani!”',
       goal: 'Membangun motivasi dan ketertarikan emosional generasi muda untuk berkarir di industri aviasi.',
       approach: 'Narasi inspiratif, audio hook yang memikat, dan dorongan bertindak untuk menggapai masa depan.',
@@ -585,7 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Edukasi 7 Syarat Mudah Join Pelatihan Staff Airlines',
       author: 'Airlines Business Career02',
       meta: '12 Juli 2025 • 35 detik',
-      img: '/tt-video-2-crop.jpg',
+      img: '/tt-thumb-3.jpg',
       hook: '“7 Syarat Mudah Join Pelatihan Staff Airlines! ✈️”',
       goal: 'Mengedukasi audiens mengenai kualifikasi pendaftaran secara transparan dan terstruktur.',
       approach: 'Struktur infografis video bertahap, narasi santai bersahabat, serta direct CTA konsultasi persyaratan.',
@@ -599,9 +599,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'video-4': {
       badge: 'VIDEO 04',
       title: 'Penerimaan Program Pramugara & Pramugari (Flight Attendant)',
-      author: 'Next Step ID Partner',
+      author: 'NextStep ID Partner',
       meta: '18 Agustus 2025 • 28 detik',
-      img: '/tt-video-2-crop.jpg',
+      img: '/tt-thumb-4.jpg',
       hook: '“Buka Jalan Menjadi Pramugara & Pramugari Siap Kerja!”',
       goal: 'Menjaring pendaftar kelas intensif Flight Attendant dengan menonjolkan pelatihan singkat dan sertifikasi ganda.',
       approach: 'Presentasi talent dengan seragam aviasi, pemaparan keuntungan program, dan integrasi WhatsApp pendaftaran.',
@@ -628,6 +628,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const csPhoneAuthor = document.getElementById('csPhoneAuthor');
   const csPhoneMeta = document.getElementById('csPhoneMeta');
   const csPhoneImg = document.getElementById('csPhoneImg');
+  const csPhoneLink = document.getElementById('csPhoneLink');
   const csTiktokLink = document.getElementById('csTiktokLink');
 
   ttTabBtns.forEach(tabBtn => {
@@ -651,6 +652,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (csPhoneAuthor) csPhoneAuthor.textContent = data.author;
         if (csPhoneMeta) csPhoneMeta.textContent = data.meta;
         if (csPhoneImg) csPhoneImg.src = data.img;
+        if (csPhoneLink) csPhoneLink.href = data.link;
         if (csTiktokLink) csTiktokLink.href = data.link;
       }
     });
